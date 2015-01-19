@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+// =========================================================
+/*
+These are some functions to make uniform sections
+*/
+function position(company,city,job,dates,blob,link) {
+/*
+This function is for use in the experience section. It unififes formatting for the various positions.
+*/
+document.write('<div class="row" style="padding: 35px 0 4px 0;"><div class="span8"><h4 style="margin: 0">'+company);
+document.write('<a href="'+link+'" target="_BLANK"><span class="badge">Website <i class="icon-arrow-right icon-white"></i></span></a>')
+document.write('</h4></div><div class="span4"><h4 class="pull-right hidden-phone" style="margin: 0">'+city+'</h4></div></div> <!-- end row--><div class="row"><div class="span6"><span style="font-style:italic; font-size: 15px;">'+job+'</span></div><div class="span6"><span class="visible-phone label">'+dates+'</span><span class="hidden-phone pull-right" style="font-style:italic; font-size: 15px;" >'+dates+'</span></div></div> <!-- end row-->');
+document.write('<div class="row" style="padding-top: 8px;"><div class="span12">'+blob+'</div></div>')
+}
+function iprogram(language, percent){
+document.write('<div class="row"><div class="span3"<p><h4 style="text-align: right" class="hidden-phone">'+language+'</h4></p><p><span class="badge visible-phone" style="text-align: center">'+language+'</span></p></div><div class="span4"><div class="progress" style="margin: 10px 0 10px 0; height: 22px;"><div class="bar" style="width: '+percent+'%;"></div></div></div><div class="span1"></div></div>')
+}
+function project(name, look, code){
+document.write('<li style="padding-top: 12px">')
+document.write('<a href="'+look+'" target="_BLANK" >'+name+'</a>')
+document.write(' <a href="'+code+'" target="_BLANK""><span class="badge badge-info">Code <i class="icon-arrow-right icon-white"></i></span></a>')
+document.write('</li>')
+}
+function extra(title, blob){
+document.write('<div class="row" style="padding-top:30px"><div class="span3"><span class="pull-right hidden-phone"><strong>'+title+'</strong></span><span class="visible-phone badge">'+title+'</span></div><div class="span5">'+blob+'</div></div>')
+}
+</script>
+<meta charset="utf-8">
+<title>Sreeja Thummala Vitae</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Curriculum Vitae for Sreeja Thummala">
+<meta name="author" content="Sreeja Thummala">
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<style>
+body {
+padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+}
+</style>
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body class="preview" data-spy="scroll" data-target=".subnav" data-offset="80">
+<div class="container">
+<header class="jumbotron">
+<div class="row">
+<div class="span12">
+<h3 style="text-align: center; text-style: italic">Curriculum Vitae for</h3>
+<h1 style="padding: 10px 0px; text-align: center; font-size: 60px; line-height: 70px; text-transform: lowercase">Sreeja Thummala</h1>
+<span class="" style="text-align: center;">
+<address>
+<a href="" target="_blank"></a><br />
+<a href="mailto:#">sthummala@wisc.edu</a><br />
+</address>
+</span>
+</div>
+</div>
+</header>
+<section id="about">
+<div class="row">
+<div class="page-header">
+<h2>About</h2>
+</div>
+</div>
+<div class="row">
+<div class="span12"><p>
+I am a masters student in Wisconisn-Madison
+</p>
+</div>
+</div>
+</section>
+<section id="education">
+<div class="row">
+<div class="page-header">
+<h2>Education</h2>
+</div>
+</div> <!-- end row -->
+<script>
+position('Case Western Reserve University',"Cleveland, OH","Organic chemistry lecture and laboratory","6/10-8/10","","")
+</script>
+</section>
+<section id="experience">
+<div class="row">
+<div class="page-header">
+<h2>Professional and Leadership Experience </h2>
+</div>
+</div> <!-- end row -->
+<script type="text/javascript">
+position('OpenDNS', 'San Francisco, CA', 'Software Engineer', '5/13-Present','','http://opendns.com')
+</script>
+</section>
+<section id="technical">
+<div class="row">
+<div class="page-header">
+<h2>Technical</h2>
+</div>
+</div> <!-- end row -->
+<div class="row">
+<div class="span8">
+<script>
+iprogram('Matlab','90')
+iprogram('PHP','85')
+iprogram('Java','50')
+iprogram('CSS','40')
+iprogram('Python','45')
+iprogram('Ruby','60')
+iprogram('Relational Databases','85')
+iprogram('NoSQL Databases','55')
+iprogram('Javascript','20')
+iprogram('Adobe CS6','40')
+iprogram('Git','80')
+iprogram('Unix System Administration','40')
+iprogram('Mathematica','60')
+</script>
+</div>
+<div class="span4">
+<div class="well">
+<h4>Selected Projects</h4>
+<hr />
+<ul>
+<script>
+project('Food Trucks Near Me','http://www.foodtrucksnearme.com','')
+project('Numbers.js Advanced Mathematics Library for Node.js and JavaScript <em>(contributor)</em>','','https://github.com/sjkaliski/numbers.js')
+project('Computational Analysis of Diffusion as a Stochastic System','','http://github.com/philipithomas/diffusion')
+project('Text Reject','http://textreject.com','https://github.com/textreject')
+project('CSE131 Java','','https://github.com/philipithomas/cse131Java')
+project('Curriculum Vitae','','https://github.com/philipithomas/cv-philipithomas')
+</script>
+</ul>
+<a class="pull-right btn btn-small btn-inverse" href="http://github.com/philipithomas">Github Profile <i class="icon-arrow-right icon-white"></i></a><br />
+</div>
+</div>
+</div>
+</section>
+<section id="honors">
+<div class="row">
+<div class="page-header">
+<h2>Honors and Skills</h2>
+</div>
+</div> <!-- end row -->
+<div class="row">
+<div class="span8">
+<script type="text/javascript">
+extra('Awards','
+1st place, <a href="http://news.wustl.edu/news/Pages/25373.aspx">2013 WUSTL Discovery Competition</a> (<a href="http://www.sparolabs.com">Sparo Labs</a>)<br />
+Eagle Scout<br />
+Honorable Mention at 2012 Startup Weekend Columbia (<a href="http://killthelandline.com">Kill the Landline</a>)<br />
+Finalist in Spring 2011 Michigan Interactive Investments Competition')
+extra('Language','Conversational Proficiency in Spanish')
+extra('Organizations','The Engineers\' Club of St. Louis')
+extra('Interests','Salsa Dancing<br /><a href="http://beer.philipithomas.com">Craft Beer</a><br />Coffee<br />Rock Climbing');
+</script>
+</div>
+<div class="span4">
+<div class="well">
+<h4>Selected Press</h4>
+<hr />
+<ul>
+<li>St. Louis Business Journal: <a href="http://www.bizjournals.com/stlouis/blog/BizNext/2012/10/community-voices-philip-thomas-at.html?page=all">Philip Thomas at Startup Weekend </a></li>
+<li>Fox 2 Now: <a href="http://philipithomas.com/2012/07/food-truck-stl-on-fox-2-news-in-the-morning/">Live Interview with Food Truck Site Founder Philip I. Thomas </a></li>
+<li>Forbes: <a href="http://www.forbes.com/sites/kaipetainen/2011/11/11/washu-students-provide-teva-some-healthy-love/">WashU Students Provide Teva Some Healthy Love</a></li>
+<li>St. Louis Business Journal: <a href="http://www.bizjournals.com/stlouis/blog/BizNext/2012/09/wutevc-starts-venture-capital-lecture.html">wute.vc starts venture capital lecture series</a></li>
+<li>Fox 2 Now: <a href="http://philipithomas.com/2012/10/me-on-fox-2-news-for-text-reject/">Text Reject Founders Demonstrate Website Live on TV</a></li>
+<li>St. Louis Business Journal: <a href="http://www.bizjournals.com/stlouis/blog/BizNext/2013/05/washington-university-students-win.html">Washington University students win $25,000 for medical device</a></li>
+</ul>
+<a class="pull-right btn btn-small btn-inverse" href="http://www.philipithomas.com/press">View Full Press <i class="icon-arrow-right icon-white"></I></a><br />
+</div>
+</div>
+</div>
+</section>
+<footer style="padding-top: 20px;">
+<hr />
+<p style="text-align: center">&copy; <a href="http://www.philipithomas.com">Philip I Thomas</a> 2013</p>
+</footer>
+</div> <!-- /container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.js"></script>
+</body>
+</html>
+
+
