@@ -1,0 +1,131 @@
+\documentclass[9pt,a4paper]{moderncv}
+\moderncvtheme[green]{classic}
+
+\usepackage{textcomp}
+\usepackage{multicol}	% multicol used for multiple columns
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[italian]{babel}
+\usepackage[scale=0.95]{geometry}
+\usepackage{moderntimeline}
+
+% Set the scale.
+% I go up to 2013 otherwise some late dates overflow on the entry
+\tlmaxdates{0}{60}
+% Set the line width.
+% This automatically sets the space under the top label to be 1pt more
+\tlwidth{0.8 ex}
+% Set the labels text size
+\tltext{\tiny}
+
+\recomputelengths
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[RE,LO]{\footnotesize}
+\firstname{Sreeja}
+\familyname{Thummala}
+\github{https://github.com/sreejathummala}
+\linkedin{http://www.linkedin.com/pub/sreeja-thummala/6a/760/3bb}
+%\title{Curriculum Vitae}
+\address{215 N Frances street}{Madison, Wisconsin}
+\mobile{608 609 3238}
+\email{sthummala@wisc.edu}
+\renewcommand{\cvcomputer}[2]{\cvline{#1}{\small#2}}
+\begin{document}
+\maketitle
+\\\
+\section{Experience}
+\tllabelcventry[purple]{37}{40}{May-Aug 14}{SDE Intern}{Amazon}{Seattle WA}{}
+{
+\begin{itemize}
+ \item Designed and implemented an interlude gateway service between AMQ and Sable, an eventually consistent database service;
+ \item Automated the deployment of the gateway;
+ \item Used Spring, Java, C++, Python.
+\end{itemize}}
+\\\
+\tllabelcventry[purple]{28}{37}{Jan-May 14}{Program Assistant}{UW-Madison}{Madison WI}{}
+{
+\begin{itemize}
+ \item Investigated the suitability of open source binary analysis software tools for the SWAMP project.
+ \item Documented and reported the findings.
+\end{itemize}}
+\\\
+\tllabelcventry[purple]{10}{20}{Jan-May 13}{SDE Intern}{Amazon}{Bangalore India}{}
+{
+\begin{itemize}
+ \item Designed and developed responsive web ;
+ \item Documented a part of ION, JSON based library;
+ \item Involved in tracking and resolving bugs for Amazon Universal Detail Page Platform Development;
+\item Demonstrated working knowledge of HTML, CSS, PHP, Spring MVC.
+\end{itemize}}
+\\\
+\tllabelcventry[purple]{0}{3}{May-Aug 11}{Research Intern}{Indira Gandhi Center for Atomic Research}{Kalpakkam India}{}
+{
+\begin{itemize}
+ \item Implemented association rule mining module of book recommendation system using STL and C++;
+ \item Documented and debugged the book recommendation system.
+\end{itemize}}
+\\\\
+\tlmaxdates{2009}{2016}
+\section{Education}
+\tlcventry[red]{2013}{2015}{MS CS}{UW-Madison}{Madison WI}{\small{Aug 2013-May 2015(exp)}}
+{
+\begin{itemize}
+ \item Courses: 
+ \\
+ \cvcomputer{Fall 2013}{Advanced operating systems, Introduction to AI, Data models and languages }
+ \cvcomputer{Spring 2014}{Real time systems, Advanced computer networks}
+ \cvcomputer{Fall 2014}{Construction of compilers, Information security, Introduction to NLP}
+\end{itemize}}
+\tlcventry[red]{2009}{2013}{BE(Hons.) CS}{BITS Pilani University}{Hyderabad IN}{\small{Aug 2009-May 2013}}
+{
+\begin{itemize}
+ \item Awarded distinction;
+ \item  Awarded BITS-Pilani Merit scholarship list 2009,2010 given to top 10 students of the university;
+ \item Electives:
+ \\ {Object Oriented programming and Design, Parallel computing, Software for embedded systems, Data mining}
+\end{itemize}}
+
+\section{Publications \& Presentation}
+\cvcomputer{}{\begin{itemize}
+ \item \textbf{\textit{Thummala Sreeja}}, Chittaranjan Hota and Antti Yla-jaaski. Article: Tag-based Improved Search in Peer-to-Peer Overlays. International Journal of Computer Applications 50(4):9-16, July 2012;
+ \item Kayiram Kavitha, Polsani Rajashree Rao, \textbf{\textit{Sreeja Tummala}}, Gajarla Vasavi and Dr.R.Gururaj, “Dual Tree Data Routing Scheme for Wireless Sensor Networks”, The Third International Conference on Advances in Information Technology and Mobile Computing (AIM-2013);
+ \item N.Madurai  Meenachi, \textbf{\textit{Sreeja  Thummala}}  and  M.  Sai  Baba,Ontology  based  association  rule mining for library domain",READIT-­2011;
+ \item Kayiram  Kavitha, Vinod  Pachipulusu, \textbf{\textit{Sreeja  Thummala}}, Dr.R.Gururaj,"Energy Efficient Query Processing for WSN based on Data Caching and Query Containment",Mobile Sensing and Data Management for Sensor Networks -2014.
+\end{itemize}}
+\section{Skills}
+\cvcomputer{Programming languages}{C, C++, Java}
+\cvcomputer{Scripting Languages}{Bash, Awk, Sed, Perl, Python, JavaScript}
+\cvcomputer{Source Code Control}{Perforce, Git}
+\cvcomputer{Application server}{Tomcat}
+\section{Academic Projects}
+\cvcomputer{}{
+\textbf{DDoS attacks in mobile cloud computing}
+\begin{itemize}
+\item Designed and implemented an effective DDoS defence strategy for mobile cloud computing platforms.
+\end{itemize}}
+\cvcomputer{}{
+\textbf{Sentiment analysis in Twitter using linguistic features}
+\begin{itemize}
+\item Developed a binary SVM classifier for tweet sentiment analysis which uses 32 linguistic features using Java.
+\end{itemize}}
+\cvcomputer{}{
+\textbf{Resource accounting in Android smart phones}
+\begin{itemize}
+\item Studied the Android and its interactions with underlying linux kernel to understand the interactions between application components;
+\item Tried to improve resource accounting by tracking down those interactions by introducing changes to binder.c.
+\end{itemize}}
+\cvcomputer{}{
+\textbf{Improved search in peer to peer search systems}
+\begin{itemize}
+\item Designed and implemented peer to peer content sharing system using JXTA;
+\item Designed and implemented an adaptive tag based search on top of the built peer to peer content sharing system;
+\item Developed user interface for the software using Java SWT and SWING.
+\end{itemize}}
+\cvcomputer{}{
+\textbf{Peer to peer video streaming}
+\begin{itemize}
+\item Designed and implemented a peer to peer video streaming application using JMF;
+\item Developed user interface for the software using Java SWT and SWING.
+\end{itemize}}
+\end{document}
