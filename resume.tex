@@ -24,58 +24,69 @@
 \fancyfoot[RE,LO]{\footnotesize}
 \firstname{Sreeja}
 \familyname{Thummala}
-\github{https://github.com/sreejathummala}
-\linkedin{http://www.linkedin.com/pub/sreeja-thummala/6a/760/3bb}
 %\title{Curriculum Vitae}
-\address{215 N Frances street}{Madison, Wisconsin}
-\mobile{608 609 3238}
-\email{sthummala@wisc.edu}
+\address{2312 3rd avenue}{Seatt1e, Washington}
+\mobile{206 739 1219}
+\email{10812sreeja@gmail.com}
 \renewcommand{\cvcomputer}[2]{\cvline{#1}{\small#2}}
 \begin{document}
 \maketitle
-\\\
 \section{Experience}
-\tllabelcventry[purple]{37}{40}{May-Aug 14}{SDE Intern}{Amazon}{Seattle WA}{}
+\cventry{June 15 -- }{SDE I}{Amazon}{Seattle WA}{}
+{
+\begin{itemize}
+ \item Working as engineer for the CMP group within Ordering (eCommerce Platform Services). The CMP group owns a tier-1 Java web service (called CASE) that executes hundreds of business rules and aggregates the results of those rules for all orders created at amazon.com and related Amazon sites. The service processes millions of transactions per day on multiple fleets worldwide and with very high availability (> 99.99 \%);
+ \item Implemented optimizations for CASE which reduced the build time by 13\% ;
+ \item Designed and implemented desktop testing feature for onboarding clients of CASE ;
+ \item Successfully launched latency features which reduced the call count by 15-20 \%
+ worldwide ;
+ \item Acted as mentor for an intern over the course of internship;
+ \item Developed a Proof-of-concept to store document partially in an internal NoSQL database. Successfully, implemented and released the feature into production which reduced the latency of save API by 15 \% ;
+\item Designed and implemented a code generation automation tool which automated the process of our clients configuring services into engine. Used NodeJS, JS, CSS, HTML, JQuery, Java; 
+\end{itemize}}
+\cventry{Jan - June 15}{Programmer}{Mechanical lab}{Madison WI}{}
+{
+\begin{itemize}
+ \item Worked on building a website which simulates flight of airplanes for pilot training;
+ \item Used Javascript, C++, HTML, CSS, JQuery.
+\end{itemize}}
+\cventry{May-Aug 14}{SDE Intern}{Amazon}{Seattle WA}{}
 {
 \begin{itemize}
  \item Designed and implemented an interlude gateway service between AMQ and Sable, an eventually consistent database service;
  \item Automated the deployment of the gateway;
  \item Used Spring, Java, C++, Python.
 \end{itemize}}
-\\\
-\tllabelcventry[purple]{28}{37}{Jan-May 14}{Program Assistant}{UW-Madison}{Madison WI}{}
+\cventry{Jan-May 14}{Program Assistant}{UW-Madison}{Madison WI}{}
 {
 \begin{itemize}
  \item Investigated the suitability of open source binary analysis software tools for the SWAMP project.
  \item Documented and reported the findings.
 \end{itemize}}
-\\\
-\tllabelcventry[purple]{10}{20}{Jan-May 13}{SDE Intern}{Amazon}{Bangalore India}{}
+\cventry{Jan-May 13}{SDE Intern}{Amazon}{Bangalore India}{}
 {
 \begin{itemize}
- \item Designed and developed responsive web ;
+ \item Designed and developed a responsive web applet;
  \item Documented a part of ION, JSON based library;
  \item Involved in tracking and resolving bugs for Amazon Universal Detail Page Platform Development;
 \item Demonstrated working knowledge of HTML, CSS, PHP, Spring MVC.
 \end{itemize}}
-\\\
-\tllabelcventry[purple]{0}{3}{May-Aug 11}{Research Intern}{Indira Gandhi Center for Atomic Research}{Kalpakkam India}{}
+\cventry{May-Aug 11}{Research Intern}{Indira Gandhi Center for Atomic Research}{Kalpakkam India}{}
 {
 \begin{itemize}
  \item Implemented association rule mining module of book recommendation system using STL and C++;
  \item Documented and debugged the book recommendation system.
 \end{itemize}}
-\\\\
 \tlmaxdates{2009}{2016}
 \section{Education}
-\tlcventry[red]{2013}{2015}{MS CS}{UW-Madison}{Madison WI}{\small{Aug 2013-May 2015(exp)}}
+\tlcventry[red]{2013}{2015}{MS CS}{UW-Madison}{Madison WI}{\small{Aug 2013-May 2015}}
 {
 \begin{itemize}
  \item Courses: 
- \\
  \cvcomputer{Fall 2013}{Advanced operating systems, Introduction to AI, Data models and languages }
  \cvcomputer{Spring 2014}{Real time systems, Advanced computer networks}
- \cvcomputer{Fall 2014}{Construction of compilers, Information security, Introduction to NLP}
+ \cvcomputer{Fall 2014}{Construction of compilers, Information security, Introduction to NLP, Distributed systems}
+  \cvcomputer{Spring 2015}{Machine learning}
 \end{itemize}}
 \tlcventry[red]{2009}{2013}{BE(Hons.) CS}{BITS Pilani University}{Hyderabad IN}{\small{Aug 2009-May 2013}}
 {
@@ -98,34 +109,5 @@
 \cvcomputer{Scripting Languages}{Bash, Awk, Sed, Perl, Python, JavaScript}
 \cvcomputer{Source Code Control}{Perforce, Git}
 \cvcomputer{Application server}{Tomcat}
-\section{Academic Projects}
-\cvcomputer{}{
-\textbf{DDoS attacks in mobile cloud computing}
-\begin{itemize}
-\item Designed and implemented an effective DDoS defence strategy for mobile cloud computing platforms.
-\end{itemize}}
-\cvcomputer{}{
-\textbf{Sentiment analysis in Twitter using linguistic features}
-\begin{itemize}
-\item Developed a binary SVM classifier for tweet sentiment analysis which uses 32 linguistic features using Java.
-\end{itemize}}
-\cvcomputer{}{
-\textbf{Resource accounting in Android smart phones}
-\begin{itemize}
-\item Studied the Android and its interactions with underlying linux kernel to understand the interactions between application components;
-\item Tried to improve resource accounting by tracking down those interactions by introducing changes to binder.c.
-\end{itemize}}
-\cvcomputer{}{
-\textbf{Improved search in peer to peer search systems}
-\begin{itemize}
-\item Designed and implemented peer to peer content sharing system using JXTA;
-\item Designed and implemented an adaptive tag based search on top of the built peer to peer content sharing system;
-\item Developed user interface for the software using Java SWT and SWING.
-\end{itemize}}
-\cvcomputer{}{
-\textbf{Peer to peer video streaming}
-\begin{itemize}
-\item Designed and implemented a peer to peer video streaming application using JMF;
-\item Developed user interface for the software using Java SWT and SWING.
-\end{itemize}}
+\cvcomputer{AWS Services}{DynamoDB, S3, EMR}
 \end{document}
